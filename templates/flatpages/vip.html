@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>VIP sector</title>
-</head>
-<body>
-  {{ flatpage.content }}
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+  {{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+  <div>
+    <h2>{{ flatpage.content }}</h2>
+    <hr>
+  </div>
+
+  {% load static %}
+  <div>
+    <img alt="" src={% static 'images/vip.jpg' %}>
+  </div>
+
+{% endblock content %}
+

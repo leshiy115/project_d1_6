@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+  {{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+  <h2>{{ flatpage.content }}</h2>
+  <hr>
+  <p>
+    На одной из страниц изменены
+    <span style="font-family: Comic Sans MS; font-size: 17px;">шрифты</span>
+  и
+    <span style="font-family: Segoe UI; font-size: 30px;">размеры</span>
+  <span style="color: #ff6600;">текста</span>
+  </p>
+{#  <span style="font-family: Arial; font-size: 22px;">Текст</span>#}
+{% endblock content %}
+
+{#На одной из страниц изменены шрифты и размеры текста.#}
